@@ -7,7 +7,8 @@ import java.util.Date;
 
 @Component
 public class Scheduler{
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+    private static final SimpleDateFormat dateFormat =
+            new SimpleDateFormat("hh 'o''clock' mm 'min' ss 'sec'");
 
     @Scheduled(fixedRate = 1000)
     public void printTime(){
